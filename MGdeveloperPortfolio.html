@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MG Developer Portfolio</title>
+	
     <!-- Bootstrap -->
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
@@ -14,14 +15,16 @@
 			padding:0;
 			margin:0;
 		}
+		
 		.navbar{
 			margin-bottom:0;
 			border-radius:0;
 		}
 	  
 		.colo{
-			color:#DA0463;;
+			color:#DA0463;
 		}
+		
 		.backColo{
 			width: 100%;
 			height: 550px;
@@ -33,13 +36,11 @@
 			z-index:0;
 		}
 		.home{
-			font-weight: normal;
 			font-size: 30px;
 			line-height: 38px;
 		}
 		@media screen and (max-width:600px){
 			.home{
-				font-weight: normal;
 				font-size: 18.1417px;
 				line-height: 23px;
 			}
@@ -60,12 +61,12 @@
 		}
 		.section1content h1{
 			font-size:25px;
-			font-weight:750;
+			font-weight:bold;
 		}
 	}
 	.meter { 
-		height:10px;
-		width: 40%;
+		height:8px;
+		width: 35%;
 	}
 	
 	.span{
@@ -92,12 +93,12 @@
 		.hide{
 			display:none;
 		}
-		
 	}
 	.box{
 		width:350px;
 		margin-top:0.25rem;
 	}
+	
 	@media screen and (max-width:700px){
 		.box{
 			width:75%;
@@ -106,14 +107,30 @@
 		}
 	}
 	.box2{
-		width:300px;
+		width:330px;
 		margin-top:0.25rem;
+	}
+	@media screen and (max-width:800px){
+		.box2{
+			width:300px;
+			margin-right:5px;
+			margin-top:0.25rem;
+		}
 	}
 	@media screen and (max-width:700px){
 		.box2{
-			width:80%;
+			width:75%;
 			height:auto;
-			padding-bottom:20px;
+			padding-bottom:15px;
+			margin-top:0.25rem;
+			margin-bottom:1rem;
+		}
+	}
+	@media screen and (max-width:400px){
+		.box2{
+			width:85%;
+			height:auto;
+			padding-bottom:15px;
 			margin-top:0.25rem;
 			margin-bottom:1rem;
 		}
@@ -209,20 +226,37 @@
 		line-height: 35px;
 		color: #201C44;
 	}
+	@media screen and (max-width:700px){
+		.contactInfo{
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 28px;
+			color: #201C44;
+		}
+	} 
 	.contact{
 		font-weight: 600;
 		font-size: 20px;
 		line-height: 25px;
 		color: #201C44;
-		width:50%;
+		width:55%;
 	}
-	@media screen and (max-width:700px){
+	@media screen and (max-width:1025px){
 		.contact{
 			font-weight: 600;
 			font-size: 20px;
 			line-height: 25px;
 			color: #201C44;
-			width:60%;
+			width:75%;
+		}
+	}
+	@media screen and (max-width:800px){
+		.contact{
+			font-weight: 600;
+			font-size: 20px;
+			line-height: 25px;
+			color: #201C44;
+			width:90%;
 		}
 	}
 	.order{
@@ -233,7 +267,9 @@
 			display:flex;
 			flex-direction:column;
 		}
-		div.order1 {order: 1;}
+		div.order1 {
+		order: 1;
+		}
 		div.order2{
 		order: 2;
 		margin-top:30px;
@@ -353,7 +389,7 @@
 			width:20%;
 			height:20%;
 			margin:1%;
-			margin-top:6.5%;
+			margin-top:8%;
 			padding:0;
 		}
 	}
@@ -364,7 +400,42 @@
 		padding-left:0px;
 	}
 	.buttonWidth{
-		width:55%;
+		width:50%;
+		font-size:20px;
+	}
+	@media screen and (max-width:800px){
+		.buttonWidth{
+			width:50%;
+			font-size:13px;
+		} 
+	}
+	.arrowwidth{
+		width:20%;
+	}
+	
+	.portfoliodetails{
+		font-family: Lato;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 22px;
+		line-height: 155.2%;
+		color: rgba(19, 18, 28, 0.7);
+	}
+	.portnum{
+		font-weight: 800;
+		font-size: 50px;
+		line-height: 65px;
+	}
+	@media screen and (max-width:800px){
+		.portfoliodetails{
+			font-size: 12px;
+			line-height: 155.2%;
+		}
+		.portnum{
+			font-weight: 800;
+			font-size: 28.9474px;
+			line-height: 38px;
+		}
 	}
     </style>
   </head>
@@ -404,9 +475,9 @@
 
 <div class="w-100 p-md-5 pt-5 backColo">
 	<div class="container section1content">
-		<h4 style="font-weight:50">Hello</h4>
+		<h4 class="home" style="font-weight:50">Hello</h4>
 		<h1>I'm Michael George</h1>
-		<h4 style="font-weight:50">Freelance Web developer & web designer</h4>
+		<h4 class="home" style="font-weight:50">Freelance Web developer & web designer</h4>
 		<button class="btn mt-3 px-4" style="color:white;background-color:#DA0463">HIRE ME</button>
 	</div>
 </div>
@@ -423,17 +494,17 @@
 	</div>
 	<div class="container mt-5">
 		<div class="row">
-			<div class="col-md mr-lg-5 m-xs-5 box mx-auto pb-n5" style="border:1px solid purple;height:auto">
+			<div class="col-md mr-lg-5 m-xs-5 box mx-auto pb-n5" style="border:0.5px solid  #12095F;height:auto">
 				<img class="img" src="vector.png" />
 				<p class="serviceheading workdone">Web Design</p>
 				<p class="workdone">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 			</div>
-			<div class="col-md mr-lg-5 m-xs-5 box mx-auto pb-2" style="border:1px solid purple;height:auto">
+			<div class="col-md mr-lg-5 m-xs-5 box mx-auto pb-2" style="border:0.5px solid  #12095F;height:auto">
 				<img class="img" style="height:50px" src="vector (1).png" />
 				<p class="serviceheading workdone">Responsive Design</p>
 				<p class="workdone">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 			</div>
-			<div class="col-md m-xs-5 box mx-auto pb-2" style="border:1px solid purple;height:auto">
+			<div class="col-md m-xs-5 box mx-auto pb-2" style="border:0.5px solid  #12095F;height:auto">
 				<img class="img" src="vector.png" />
 				<p class="serviceheading workdone">Web Development</p>
 				<p class="workdone">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -496,17 +567,17 @@
 	</div>
 	<div class="container py-5">
 		<div class="row">
-			<div class="col-md mx-lg-5 d-flex flex-column bg-white box2 mx-auto px-2 pb-5 mb-3">
-				<h2 style="text-align:left;color:#DA0463" class="pl-4 pt-4">01</h2>
-				<p style="text-align:left" class="px-4  contentheading">Experimenting Directory Management</p>
-				<p style="text-align:left" class="px-4">Implementing the user centric design for the website. This product connects you to paid internships across africa</p>
-				<button class="btn btn-default buttonWidth mt-auto mx-4" style="border-color:black;color:black">Explore Project <img class="pl-1" src="Arrow 1.png"/></button>
+			<div class="col-md mx-md-3 md-lg-3 d-flex flex-column bg-white box2 mx-auto px-2 px-sm-1 pb-5 mb-3">
+				<h2 style="text-align:left;color:#DA0463" class="pl-4 pl-xs-2 pt-4 portnum">01</h2>
+				<p style="text-align:left" class="px-4  pl-xs-2 contentheading">Experimenting Directory Management</p>
+				<p style="text-align:left" class="px-4 pl-xs-2 mt-auto portfoliodetails">Implementing the user centric design for the website. This product connects you to paid internships across africa</p>
+				<button class="btn btn-default buttonWidth mt-auto mx-xs-2 mx-4" style="border-color:black;color:black">Explore Project <img class="pl-1 arrowwidth" src="Arrow 1.png"/></button>
 			</div>
-			<div class="col-md mx-lg-5 d-flex flex-column bg-white box2 mx-auto px-2 pb-5 mb-3">
-				<h2 style="text-align:left;color:#DA0463" class="px-4 pt-4">02</h2>
+			<div class="col-md mx-md-3 md-lg-3 d-flex flex-column bg-white box2 mx-auto px-2 px-sm-1 pb-5 mb-3">
+				<h2 style="text-align:left;color:#DA0463" class="px-4 pt-4 portnum">02</h2>
 				<p style="text-align:left" class="px-4 contentheading">The Smart Camera Exploring</p>
-				<p style="text-align:left" class="px-4">Implementing the user centric design for the website. This product connects you to paid internships across africa</p>
-				<button class="btn btn-default buttonWidth mt-auto mx-4" style="border-color:black;color:black">Explore Project <img class="pl-1" src="Arrow 1.png"/></button>
+				<p style="text-align:left" class="px-4 mt-auto portfoliodetails">Implementing the user centric design for the website. This product connects you to paid internships across africa</p>
+				<button class="btn btn-default buttonWidth mt-auto mx-4" style="border-color:black;color:black">Explore Project <img class="pl-1 arrowwidth" src="Arrow 1.png"/></button>
 			</div>
 		</div>
 	</div>
