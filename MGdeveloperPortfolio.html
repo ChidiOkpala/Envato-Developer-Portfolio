@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MG Developer Portfolio</title>
+    <!-- Bootstrap -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	
+    <style>
+		*{
+			padding:0;
+			margin:0;
+		}
+		.navbar{
+			margin-bottom:0;
+			border-radius:0;
+		}
+	  
+		.colo{
+			color:#DA0463;;
+		}
+		.backColo{
+			width: 100%;
+			height: 550px;
+			background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 106, 250, 0.3) ), url(image1.png);
+			background-repeat: no-repeat;
+			background-position:center center;
+			background-size:cover;	
+			background-color:white;
+			z-index:0;
+		}
+		.section1content{
+			color:white;
+			margin-top:10%;
+		}
+	 .section1content h1{
+		font-size:70px;
+		font-weight:bold;
+	 }
+	 @media screen and (max-width:500px){
+		.section1content{
+			color:white;
+			margin-top:15%;
+			width:100%;
+		}
+		.section1content h1{
+			font-size:25px;
+			font-weight:750;
+		}
+	}
+	.meter { 
+		height:10px;
+		width: 40%;
+	}
+	
+	.span{
+		height: 100%;
+		border-radius: none;
+		background-color:#DA0463;
+		color:#DA0463;
+	}
+	.workdone{
+		text-align:center;
+	}
+	.textWidth{
+		width:65%;
+	}
+	@media screen and (max-width:800px){
+		.textWidth{
+			width:90%;
+		}
+	}
+	.hide{
+		display:block;
+	}
+	@media screen and (max-width:500px){
+		.hide{
+			display:none;
+		}
+		
+	}
+	.box{
+		width:350px;
+		margin-top:0.25rem;
+	}
+	@media screen and (max-width:700px){
+		.box{
+			width:75%;
+			margin-top:0.25rem;
+			margin-bottom:1rem;
+		}
+	}
+	.box2{
+		width:300px;
+		margin-top:0.25rem;
+	}
+	@media screen and (max-width:700px){
+		.box2{
+			width:95%;
+			margin-top:0.25rem;
+			margin-bottom:1rem;
+		}
+	}
+	.section2{
+		background-color:white;
+		transform:skew(0deg, -10deg) translateY(-120px);
+		padding-top:30px;
+	}
+	.section2 .container{
+		transform:skew(0deg, 10deg);
+	}
+	
+	.portfolio{
+		background-color:rgba(102, 95, 128, 0.2);
+		position:relative;
+	}
+	.portfolio:before{
+		content: '';
+		position:absolute;
+		border-top:100px solid rgba(102, 95, 128, 0.2);
+		border-right:98.8vw solid transparent;
+		bottom:-100px;
+		z-index:1;
+	}
+	.portfolio:after{
+		content: '';
+		position:absolute;
+		border-bottom:100px solid rgba(102, 95, 128, 0.2);
+		border-left:100vw solid transparent;
+		top:-100px;
+	}
+	.bottom{
+		background-color:#E0DFE6;
+		position:relative;
+	}
+	.bottom:after{
+		content: '';
+		position:absolute;
+		border-bottom:100px solid #E0DFE6;
+		border-left:100vw solid transparent;
+		top:-100px;
+		z-index:10;
+	}
+	.section3{
+		width: 100%;
+		height: 700px;
+		background: url(section3.png);
+		background-repeat: no-repeat;
+		background-position:center center;
+		background-size:cover;	
+		background-color:white;
+		z-index:20;
+		margin-top:0px;
+	}
+	.lastSection{
+		background-color: #E0DFE6;
+		width:100%;
+	}
+	
+	.input{
+		border:none;
+	}
+	
+	.contentheading{
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 40px;
+	}
+	.sectionHeading{
+		font-weight: bold;
+		font-size: 50px;
+		line-height: 63px;
+		color: #201C44;
+	}
+	@media screen and (max-width:600px){
+		.sectionHeading{
+			font-weight: bold;
+			font-size: 25px;
+			line-height: 30px;
+			color: #201C44;
+		}
+	}
+	.serviceheading{
+		font-weight: bold;
+		font-size: 23.0927px;
+		line-height: 29px;
+		color: #12095F;
+	}
+	.contactInfo{
+		font-weight: 600;
+		font-size: 28px;
+		line-height: 35px;
+		color: #201C44;
+	}
+	.contact{
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 25px;
+		color: #201C44;
+		width:50%;
+	}
+	@media screen and (max-width:700px){
+		.contact{
+			font-weight: 600;
+			font-size: 20px;
+			line-height: 25px;
+			color: #201C44;
+			width:60%;
+		}
+	}
+	.order{
+		display:flex;
+	}
+	@media screen and (max-width:700px){
+		.order{
+			display:flex;
+			flex-direction:column;
+		}
+		div.order1 {order: 1;}
+		div.order2{
+		order: 2;
+		margin-top:30px;
+		}
+	}
+	.img{
+		width:15%;
+		margin:30px 42.5%;
+	}
+	.img2{
+		width:55px;
+		height:50px;
+	}
+	.img2Section{
+		width:auto;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	.number{
+		font-weight: 800;
+		font-size: 24.5px;
+		line-height: 53px;	
+	}
+	.contactButton{
+		color:white;
+		background-color:#DA0463;
+		width:35%;
+	}
+	@media screen and (max-width:1000px){
+		.contactButton{
+			color:white;
+			background-color:#DA0463;
+			width:45%;
+		}
+	}
+	
+	
+	.client{
+		padding-top:80px;
+	}
+	.clientName{
+		font-weight: bold;
+		font-size: 50px;
+		line-height: 65px;
+		text-align: center;
+		color: #332222;
+	}
+	.clientCompany{
+		font-weight: 600;
+		font-size: 35px;
+		line-height: 65px;
+		text-align: center;
+		color: #DA0463;
+	}
+	.clientData{
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 30px;
+		text-align: center;
+		color: #393737;
+	}
+	.mainClientImg{
+		width:30%;
+		height:30%;
+	}
+	.firstRowImg{
+		width:20%;
+		height:20%;
+		margin:7%;
+	}
+	.midRowImg{
+		width:10%;
+		height:10%;
+		margin:2%;
+		margin-top:6.5%;
+	}
+	
+	@media screen and (max-width:850px){
+		.serviceheading{
+			font-weight: bold;
+			font-size: 15px;
+			line-height: 18px;
+			color: #12095F;
+		}
+		.clientName{
+			font-weight: bold;
+			font-size: 20px;
+			line-height: 20px;
+			text-align: center;
+			color: #332222;
+		}
+		.clientCompany{
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 20px;
+			text-align: center;
+			color: #DA0463;
+		}
+		.clientData{
+			font-weight: 200;
+			font-size: 10px;
+			line-height: 15px;
+			text-align: center;
+			color: #393737;
+		}
+		.mainClientImg{
+			width:50%;
+			height:30%;
+		}
+		.firstRowImg{
+			width:30%;
+			height:30%;
+			margin:3%;
+			padding:0;
+		}
+		.midRowImg{
+			width:20%;
+			height:20%;
+			margin:1%;
+			margin-top:6.5%;
+			padding:0;
+		}
+	}
+	.col-2 {
+		max-width:32%;
+	}
+	.container-fluid{
+		padding-left:0px;
+	}
+	.buttonWidth{
+		width:60%;
+	}
+    </style>
+  </head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-white">
+			<div class="container">
+				<a class="navbar-brand" style="color:#DA0463;font-weight:800;font-size:34.375px" href="#">MG</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+					  <li class="nav-item active">
+						<a class="nav-link px-lg-4" style="color:purple" href="#">Home <span class="sr-only">(current)</span></a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link px-lg-4" href="#">Services</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link px-lg-4" href="#">My Story</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link px-lg-4" href="#">My Projects</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link px-lg-4" href="#">Portfolio</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link px-lg-4" href="#">Reviews</a>
+					  </li>
+					</ul>
+					<button class="btn my-2 my-sm-0 ml-lg-5 px-lg-4" style="color:#DA0463;border-color:#DA0463" type="submit">Contact us</button>
+				</div>
+			</div>
+		</nav>
+
+<div class="w-100 p-md-5 pt-5 backColo">
+	<div class="container section1content">
+		<h4 style="font-weight:50">Hello</h4>
+		<h1>I'm Michael George</h1>
+		<h4 style="font-weight:50">Freelance Web developer & web designer</h4>
+		<button class="btn mt-3 px-4" style="color:white;background-color:#DA0463">HIRE ME</button>
+	</div>
+</div>
+<section class="section2">
+	<div class="container">
+		<div class="row justify-content-center mt-3">
+			<h3 class="sectionHeading">
+				My Services
+				<div class="meter mx-auto mt-2">
+					<div class="span"></div>
+				</div>
+			</h3>
+		</div>
+	</div>
+	<div class="container mt-5">
+		<div class="row">
+			<div class="col-md mr-lg-5 m-xs-5 box mx-auto pb-n5" style="border:1px solid purple;height:auto">
+				<img class="img" src="vector.png" />
+				<p class="serviceheading workdone">Web Design</p>
+				<p class="workdone">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+			<div class="col-md mr-lg-5 m-xs-5 box mx-auto pb-2" style="border:1px solid purple;height:auto">
+				<img class="img" style="height:50px" src="vector (1).png" />
+				<p class="serviceheading workdone">Responsive Design</p>
+				<p class="workdone">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+			<div class="col-md m-xs-5 box mx-auto pb-2" style="border:1px solid purple;height:auto">
+				<img class="img" src="vector.png" />
+				<p class="serviceheading workdone">Web Development</p>
+				<p class="workdone">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+		</div>
+	</div>
+</section>
+<div class="section3"></div>
+
+<div class="container">
+	<div class="row justify-content-center mt-0 mx-auto textWidth">
+		<h3 class="workdone sectionHeading">
+			Over 1500+ Completed work & still counting
+			<div class="meter mx-auto mt-4">
+				<div class="span"></div>
+			</div>
+		</h3>
+	</div>
+</div>
+<div class="container my-5 pb-5" style="height:auto;background-color:white">
+	<div class="row">
+		<div class="col-md mx-lg-5 pl-md-5 img2Section">
+			<img class="img2" src="vector (2).png" />
+			<p class="my-0 mt-n1 number ml-2" style="color: #36BAEA;">750</p>
+			<p class="my-0 ml-2">Users</p>
+		</div>
+		<div class="col-md mr-lg-5 mx-xs-5 img2Section">
+			<img class="img2" src="vector (3).png" />
+			<p class="my-0 number ml-2" style="color:#FCC103;">1105</p>
+			<p class="my-0 ml-2">Topics</p>
+		</div>
+		<div class="col-md mr-lg-5 mx-xs-5 hide img2Section">
+			<img class="img2"src="vector (4).png" />
+			<p class="my-0 ml-2 number" style="color: #FD63B4">210</p>
+			<p class="my-0 ml-2">Forum</p>
+		</div>
+		<div class="col-md mr-lg-5 mx-xs-5 hide img2Section">
+			<img class="img2" src="vector (5).png" />
+			<p class="my-0 ml-2 number" style="color: #2CD611">210</p>
+			<p class="my-0 ml-2">Replies</p>
+		</div>
+		<div class="col-md mx-xs-5 hide img2Section">
+			<img class="img2" src="vector (7).png" alt="coming" />
+			<p class="my-0 number ml-2" style="color:#B64FE7">361</p>
+			<p class="my-0 ml-2">Tags</p>
+		</div>
+	</div>
+</div>
+
+<div class="portfolio" style="background-color:rgba(102, 95, 128, 0.2)">
+	<div class="container">
+		<div class="row justify-content-center pt-2">
+			<h3 class="sectionHeading">
+				My Portfolio
+				<div class="meter mx-auto mt-1">
+					<div class="span"></div>
+				</div>
+			</h3>
+		</div>
+	</div>
+	<div class="container py-5">
+		<div class="row">
+			<div class="col-md mx-lg-5 d-flex flex-column bg-white box2 mx-auto px-2 pb-4 mb-3" style="height:350px;">
+				<h2 style="text-align:left;color:#DA0463" class="pl-4 pt-4">01</h2>
+				<p style="text-align:left" class="px-4  contentheading">Experimenting Directory Management</p>
+				<p style="text-align:left" class="px-4">Implementing the user centric design for the website. This product connects you to paid internships across africa</p>
+				<button class="btn btn-default buttonWidth mt-auto mx-4" style="border-color:black;color:black">Explore Project <img class="pl-2" src="Arrow 1.png"/></button>
+			</div>
+			<div class="col-md mx-lg-5 d-flex flex-column bg-white box2 mx-auto px-2 pb-4 mb-3" style="height:auto">
+				<h2 style="text-align:left;color:#DA0463" class="px-4 pt-4">02</h2>
+				<p style="text-align:left" class="px-4 contentheading">The Smart Camera Exploring</p>
+				<p style="text-align:left" class="px-4">Implementing the user centric design for the website. This product connects you to paid internships across africa</p>
+				<button class="btn btn-default buttonWidth mt-auto mx-4" style="border-color:black;color:black">Explore Project <img class="pl-2" src="Arrow 1.png"/></button>
+			</div>
+		</div>
+	</div>
+</div>
+<div style="height:auto" class="container client">
+	<div class="container">
+		<div class="row justify-content-center">
+			<h3 class="sectionHeading workdone">
+				Happy Clients Say
+				<div class="meter mx-auto mt-3">
+					<div class="span"></div>
+				</div>
+			</h3>
+		</div>
+	</div>
+	<div class="row justify-content-between mt-5">
+		<img src="Ellipse 53.png" class="col-1 firstRowImg"/>
+		<img src="client.png"class="col-2 mainClientImg"/>
+		<img src="Ellipse 53.png" class="col-1 firstRowImg"/>
+	</div>
+	<div class="row justify-content-between">
+		<img src="Ellipse 56.png" class="col-1 midRowImg"/>
+		<div style="width:250px" class="col-7">
+			<h3 class="clientName">Johan D. Williams</h3>
+			<h5 class="clientCompany">FOUNDER AT MICRO</h5>
+			<P class="clientData">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			</P>
+		</div>
+		<img src="Ellipse 56.png" class="col-1 midRowImg"/>
+	</div>
+	<div class="row justify-content-between">
+		<img src="Ellipse 56.png" class="col-1 firstRowImg" style="padding-bottom:100px"/>
+		<img src="Ellipse 56.png" class="col-1 firstRowImg" style="padding-bottom:100px"/>
+	</div>
+</div>
+
+<section class="container-fluid bottom lastSection pb-5">
+	<div class="container">
+		<div class="row justify-content-center pt-5">
+			<h3 class="sectionHeading">
+				Contact Me
+				<div class="meter mx-auto mt-3">
+					<div class="span"></div>
+				</div>
+			</h3>
+		</div>
+		<p class="workdone contactInfo pb-4 pt-2">I'm Available for any Projects</p>
+		<div class="order">
+			<div class="col order2">
+				<div class="contact">
+					<p class="mb-0">Hit me up lets create magic together,</p>
+					<p class="mt-0">Or you can just say <span style="color:#DA0463">Hello?</span></p>
+					<p>+223-445-667</p>
+					<p>George@mail.com</p>
+					<p>New jersey, USA</p>
+					<div class="d-flex">
+						<img class="pr-3" src="vector (8).png" />
+						<img class="pr-3" src="vector (9).png" />
+						<img class="pr-3" src="vector (10).png" />
+						<img class="pr-3" src="vector (11).png" />
+					</div>
+				</div>	
+			</div>
+			<div class="col order1 d-flex flex-column">
+				<input type="text" placeholder="Name" class="p-2 mb-3 pl-4 input"/>
+				<input type="email" placeholder="Email Address" class="p-2 pl-4 mb-3 input" >
+				<input type="text" placeholder="Phone Number" class="p-2 pl-4 mb-3 input"/>
+				<textarea placeholder="Project Description" rows="5" cols="97" class="p-2 pl-4 mb-3 input"></textarea>
+				<button class="btn mt-3 px-3 contactButton" >Contact Me</button>
+			</div>
+		</div>
+	</div>
+</section>
+<footer class="lastSection">
+	<div class="container lastSection pt-2 pb-3"style="border-top:1px solid rgba(32, 28, 68, 0.3)">
+		<p class="workdone">All Rights Reserved. <span style="color:#DA0463">George 2020</span></p>
+	</div>
+</footer>
+
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+   </body>
+
+
+
+
+
+</html>
